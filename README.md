@@ -20,7 +20,7 @@ SQL Injection (SQLi) adalah jenis serangan yang memungkinkan penyerang untuk men
 ## Teknik Serangan SQL Injection
 ### Serangan Bypass Authentication
 
-Saat penyerang memasukkan ```' OR '1'='1 ``` pada field username dan sembarang password
+Saat penyerang memasukkan ```' OR '1'='1 ``` atau ```' OR 1=1 --' ``` pada field username dan sembarang password
 ```sql
 -- Query yang terbentuk:
 SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'anypassword';
